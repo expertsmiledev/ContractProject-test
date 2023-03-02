@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: AGPL-3.0
+// AGPL-3.0
 pragma solidity ^0.8.9;
 
 import {ERC721} from "@rari-capital/solmate/src/tokens/ERC721.sol";
@@ -37,7 +37,7 @@ abstract contract GemMetadata is ERC721, Auth {
     _gemTypes[gemId] = gemType;
     emit GemTypeSet(gemId, gemType);
   }
-
+  //
   function _exists(uint256 tokenId) internal view returns (bool) {
     return ownerOf[tokenId] != address(0);
   }
